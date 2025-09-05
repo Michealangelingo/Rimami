@@ -6,14 +6,14 @@ Dette repository indeholder PowerShell-scripts, der henter medarbejderdata fra e
 
 ## Oversigt
 
-- **MariaDBOutput.ps1**  
+- **`MariaDBOutput.ps1`**  
   Simpelt script der udtrækker medarbejdere fra databasen `hotelrimami` og viser dem i konsollen som tabel.
 
-- **SyncFraMariaDBTilActiveDirectory.ps1**  
+- **`SyncFraMariaDBTilActiveDirectory.ps1`**  
   Synkroniserer medarbejdere til AD:  
   - Sletter tidligere synkroniserede brugere.  
   - Opretter nye brugere med unikke brugernavne.  
-  - Sætter DisplayName, UPN og rolle.  
+  - Sætter *DisplayName*, UPN og rolle.  
   - Aktiverer/deaktiverer brugere baseret på kolonnen `active`.  
 
 ---
@@ -33,14 +33,6 @@ Dette repository indeholder PowerShell-scripts, der henter medarbejderdata fra e
 
 ## Brug
 
-### 1. Lav dataudtræk fra database
+### 1. Lav dataudtræk fra database  
 ```powershell
 .\MariaDBOutput.ps1
-
----
-
-### 2. Lav dataudtræk fra database, lav dem om til objekter og brug WinRM til at ligge objekterne ind i Active Directory
-```powershell
-.\SyncFraMariaDBTilActiveDirectory.ps1
-
-
