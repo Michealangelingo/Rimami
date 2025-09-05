@@ -36,3 +36,8 @@ Dette repository indeholder PowerShell-scripts, der henter medarbejderdata fra e
 ### 1. Lav dataudtræk fra database  
 ```powershell
 .\MariaDBOutput.ps1
+
+### 2. Lav dataudtræk fra database samt oprettelse af brugere i Active Directory  
+```powershell
+.\SyncFraMariaDBTilActiveDirectory.ps1
+
