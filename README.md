@@ -37,7 +37,10 @@ Dette repository indeholder PowerShell-scripts, der henter medarbejderdata fra e
 ```powershell
 .\MariaDBOutput.ps1
 
+---
+
 ### 2. Lav dataudtræk fra database, lav dem om til objekter og brug WinRM til at ligge objekterne ind i Active Directory
 ```powershell
 .\SyncFraMariaDBTilActiveDirectory.ps1
+
 
